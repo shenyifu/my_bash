@@ -1,0 +1,20 @@
+
+#define
+SCRIPT_HOME=~/script
+#alias 
+
+## cd
+
+alias start="$SCRIPT_HOME/start/start.sh"
+alias work='tmux a -t work'
+
+## mysql
+alias my="mycli -uhomestead -psecret "
+alias gpu='[[ -z $(git config "branch.$(git symbolic-ref --short HEAD).merge")  ]] && 
+           git push -u origin $(git symbolic-ref --short HEAD) || 
+                      git push'
+## other
+alias reload="source ~/.my_bash"
+
+#path
+
