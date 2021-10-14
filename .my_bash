@@ -18,3 +18,4 @@ alias reload="source ~/.my_bash"
 
 #path
 
+gpu=$'[[ -z $(git config "branch.$(git symbolic-ref --short HEAD).merge")  ]] && \n           git push -u origin $(git symbolic-ref --short HEAD) || \n                      git push'
